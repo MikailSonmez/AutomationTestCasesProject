@@ -148,4 +148,9 @@ public class ReusableMethods {
 
         return element;
     }
+
+    public static void ScrollDown(WebDriver driver)
+    {
+        ((JavascriptExecutor)driver).executeScript("window.scroll(0, 350);");
+    }
 }

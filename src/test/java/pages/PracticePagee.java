@@ -15,7 +15,7 @@ public class PracticePagee {
     @FindBy(id = "menu-item-40")
     public WebElement ShopMenu;
 
-    @FindBy(xpath = "//a[text()=\"Home\"]")
+    @FindBy(xpath = "//a[text()=Home]")
     public WebElement Home;
 
     @FindBy(className = "n2-ss-slider-1 n2-grab")
