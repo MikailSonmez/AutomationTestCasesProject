@@ -5,10 +5,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-public class PracticePage {
 
-    public PracticePage(){
-        PageFactory.initElements(Driver.getDriver(), this);
+public class PracticePagee {
+
+    public PracticePagee() {
+        PageFactory.initElements(Driver.getDriver(),this);
     }
 
     @FindBy(id = "menu-item-40")
@@ -27,3 +28,4 @@ public class PracticePage {
     public WebElement Slide3;
 
 }
+
