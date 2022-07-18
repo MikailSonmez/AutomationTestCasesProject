@@ -12,8 +12,8 @@ public class AutomationExercisePage {
     }
 
 
-    @FindBy(xpath = "//a[@href='/login']")
-    public WebElement signupLogin;
+    @FindBy(xpath = "//i[@class='fa fa-lock']")
+    public WebElement signupLoginButton;
 
     @FindBy(xpath= "//h2[contains(text(), 'New User Signup!')]")
     public WebElement newUserSignup;
@@ -25,7 +25,7 @@ public class AutomationExercisePage {
     public WebElement newUserEmailTextBox;
 
     @FindBy(xpath= "(//button[@type='submit'])[2]")
-    public WebElement signUpButton;
+    public WebElement newUserSignUpButton;
 
     @FindBy(xpath= "(//h2[@class='title text-center'])[1]")
     public WebElement enterAccountInformation;
@@ -56,6 +56,18 @@ public class AutomationExercisePage {
 
     @FindBy(xpath = "//div[@class='page-header']")
     public WebElement deleteAccountVisible;
+
+    @FindBy(xpath = "//h2[text()='Login to your account']")
+    public WebElement loginToYourAccount;
+
+    @FindBy(xpath = "//input[@data-qa='login-email']")
+    public WebElement loginEmailAdressBox;
+
+    @FindBy(xpath = "//input[@data-qa='login-password']")
+    public WebElement loginPasswordAdressBox;
+
+    @FindBy(xpath = "(//button[@type='submit'])[1]")
+    public WebElement loginLoginButton;
 
     // (css = "[onclick=\"addElement()\"]") with css like that
 

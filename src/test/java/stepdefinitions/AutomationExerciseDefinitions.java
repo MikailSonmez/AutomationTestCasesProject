@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import pages.AutomationExercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -34,8 +35,8 @@ public class AutomationExerciseDefinitions {
         Assert.assertTrue(actualUrl.contains("https://automationexercise.com/"));
     }
     @Given("Click on {string} button")
-    public void click_on_button(String SignupLoginButton) {
-        automationExercisePage.signupLogin.click();
+    public void click_on_button(String string) {
+        automationExercisePage.signupLoginButton.click();
     }
     @Given("Verify {string} is visible")
     public void verify_is_visible(String string) {
@@ -49,7 +50,7 @@ public class AutomationExerciseDefinitions {
     }
     @Given("Click signup {string} button")
     public void click_signup_button(String string) {
-        automationExercisePage.signUpButton.click();
+        automationExercisePage.newUserSignUpButton.click();
 
     }
     @Given("Verify that {string} is visible")
@@ -106,6 +107,22 @@ public class AutomationExerciseDefinitions {
     @Then("Verify that {string} is visible and click {string} button")
     public void verify_that_is_visible_and_click_button(String string, String string2) {
         automationExercisePage.deleteAccountVisible.isDisplayed();
+
+    }
+
+    @Given("Verify login to your account {string} is visible")
+    public void verify_login_to_your_account_is_visible(String string) {
+        automationExercisePage.loginToYourAccount.isDisplayed();
+    }
+    @Then("Enter correct email address and password")
+    public void enter_correct_email_address_and_password() {
+        automationExercisePage.loginEmailAdressBox.sendKeys(ConfigReader.getProperty("AutomationExerciseEmail"));
+        automationExercisePage.loginPasswordAdressBox.sendKeys(ConfigReader.getProperty("AutomationExercisePassword"));
+
+    }
+    @Given("Click login {string} button")
+    public void click_login_button(String string) {
+        automationExercisePage.loginLoginButton.click();
 
     }
 }

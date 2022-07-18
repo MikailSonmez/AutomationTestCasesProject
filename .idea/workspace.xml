@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18b1f8d4-c9f9-4166-b6f8-53b5c8dd125a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/utilities/JSutils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1004_LoginUserCorrectEmailPassword.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/AutomationExercisePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AutomationExercisePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/AutomationExerciseDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AutomationExerciseDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1003_RegisterUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1003_RegisterUser.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,15 +61,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC01_Practice Page Contain Sliders Test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US1004_LoginUserCorrectEmailPassword" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1001_PracticePageContainSliders.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1004_LoginUserCorrectEmailPassword.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationTestCasesProject" />
-      <option name="NAME_FILTER" value="^TC01_Practice Page Contain Sliders Test$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01_Practice Page Contain Sliders Test$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC01_Practice Page Contain Sliders Test" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: US1004_LoginUserCorrectEmailPassword" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -81,15 +80,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC01_Practice Page Sliders" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC03_Register User" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1001_PracticePageContainSliders.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1003_RegisterUser.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationTestCasesProject" />
-      <option name="NAME_FILTER" value="^TC01_Practice Page Sliders$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC01_Practice Page Sliders$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC01_Practice Page Sliders" />
+      <option name="NAME_FILTER" value="^TC03_Register User$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC03_Register User$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC03_Register User" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -101,15 +100,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: TC02_Practice Page Contain Arrival Test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: TC04_Login user corret email password" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1002_PracticePageContainArrival.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1004_LoginUserCorrectEmailPassword.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationTestCasesProject" />
-      <option name="NAME_FILTER" value="^TC02_Practice Page Contain Arrival Test$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC02_Practice Page Contain Arrival Test$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: TC02_Practice Page Contain Arrival Test" />
+      <option name="NAME_FILTER" value="^TC04_Login user corret email password$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^TC04_Login user corret email password$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: TC04_Login user corret email password" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -140,9 +139,9 @@
       <list>
         <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Feature: US1003_RegisterUser" />
-        <item itemvalue="Cucumber Java.Scenario: TC01_Practice Page Contain Sliders Test" />
-        <item itemvalue="Cucumber Java.Scenario: TC02_Practice Page Contain Arrival Test" />
-        <item itemvalue="Cucumber Java.Scenario: TC01_Practice Page Sliders" />
+        <item itemvalue="Cucumber Java.Scenario: TC03_Register User" />
+        <item itemvalue="Cucumber Java.Feature: US1004_LoginUserCorrectEmailPassword" />
+        <item itemvalue="Cucumber Java.Scenario: TC04_Login user corret email password" />
       </list>
     </recent_temporary>
   </component>
