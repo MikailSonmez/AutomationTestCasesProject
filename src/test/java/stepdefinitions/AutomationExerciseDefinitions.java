@@ -11,12 +11,18 @@ import org.openqa.selenium.interactions.Actions;
 import pages.AutomationExercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
+import utilities.JSutils;
 
 import static utilities.Driver.driver;
 
 public class AutomationExerciseDefinitions {
 
     AutomationExercisePage automationExercisePage=new AutomationExercisePage();
+
+    Actions actions=new Actions(Driver.getDriver());
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+
+
 
     @Given("Launch browser Navigate to url {string}")
     public void launch_browser_navigate_to_url(String string) {
@@ -52,11 +58,10 @@ public class AutomationExerciseDefinitions {
     }
     @Then("Fill details: Title, Name, Email, Password, Date of birth")
     public void fill_details_title_name_email_password_date_of_birth() {
-        Actions actions = new Actions(driver);
         automationExercisePage.titleMr.click();
-        actions.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("Mikail4458.").sendKeys(Keys.TAB)
-                .click().sendKeys("27").sendKeys(Keys.TAB).click().sendKeys("September")
-                .click().sendKeys(Keys.TAB);
+        actions.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("Mikail44584458").sendKeys(Keys.TAB)
+                .click().sendKeys("17").sendKeys(Keys.TAB).click().sendKeys("September")
+                .click().sendKeys(Keys.TAB).click().sendKeys("2005").click().perform();
 
     }
     @Given("Select checkbox {string}")
@@ -64,23 +69,43 @@ public class AutomationExerciseDefinitions {
 
     }
     @Then("Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number")
-    public void fill_details_first_name_last_name_company_address_address2_country_state_city_zipcode_mobile_number() {
-
+    public void fill_details_first_name_last_name_company_address_address2_country_state_city_zipcode_mobile_number() throws InterruptedException {
+        automationExercisePage.firstNameBox.click();
+        actions.sendKeys("mikail").sendKeys(Keys.TAB)
+                .sendKeys("donmez").sendKeys(Keys.TAB).sendKeys("linkedIn").sendKeys(Keys.TAB)
+                .sendKeys("yesiltepe").sendKeys(Keys.TAB).sendKeys(Keys.TAB).click()
+                .moveToElement(automationExercisePage.singapore).click().sendKeys(Keys.TAB).sendKeys("eastanatolia")
+                .sendKeys(Keys.TAB).sendKeys("malatya").sendKeys(Keys.TAB).sendKeys("44000")
+                .sendKeys(Keys.TAB).sendKeys("05555564565").perform();
     }
     @Given("Click {string}")
     public void click(String string) {
+        automationExercisePage.createAccountButton.click();
 
     }
     @Then("Click {string} button")
     public void click_button(String string) {
+        automationExercisePage.accountCreated.isDisplayed();
+
+    }
+
+    @Then("Click continue {string} button")
+    public void click_continue_button(String string) {
+        automationExercisePage.continueButton.click();
+    }
+    @Given("Verify that logged username {string} is visible")
+    public void verify_that_logged_username_is_visible(String string) {
+        automationExercisePage.loggedInAs.isDisplayed();
 
     }
     @Given("Click delete {string} button")
     public void click_delete_button(String string) {
+        automationExercisePage.deleteAccount.click();
 
     }
     @Then("Verify that {string} is visible and click {string} button")
     public void verify_that_is_visible_and_click_button(String string, String string2) {
+        automationExercisePage.deleteAccountVisible.isDisplayed();
 
     }
 }

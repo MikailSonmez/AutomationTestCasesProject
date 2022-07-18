@@ -14,7 +14,7 @@ Feature: US1003 register user
     Then Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number
     Given Click 'Create Account button'
     And Verify that 'ACCOUNT CREATED!' is visible
-    Then Click 'Continue' button
-    Given Verify that 'Logged in as username' is visible
+    Then Click continue 'Continue' button
+    Given Verify that logged username 'Logged in as username' is visible
     And Click delete 'Delete Account' button
     Then Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button

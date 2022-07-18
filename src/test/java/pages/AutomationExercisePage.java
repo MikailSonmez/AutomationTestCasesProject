@@ -33,6 +33,33 @@ public class AutomationExercisePage {
     @FindBy(xpath= "//input[@id='id_gender1']")
     public WebElement titleMr;
 
+    @FindBy(xpath= "//input[@data-qa='first_name']")
+    public WebElement firstNameBox;
+
+    @FindBy(xpath= "//option[@value='Singapore']")
+    public WebElement singapore;
+
+    @FindBy(xpath= "(//button[@type='submit'])[1]")
+    public WebElement createAccountButton;
+
+    @FindBy(xpath = "//h2[@class='title text-center']")
+    public WebElement accountCreated;
+
+    @FindBy(xpath = "//a[@data-qa='continue-button']")
+    public WebElement continueButton;
+
+    @FindBy(xpath= "//a[text()=' Logged in as ']")
+    public WebElement loggedInAs;
+
+    @FindBy(xpath= "(//a[@style='color:brown;'])[2]")
+    public WebElement deleteAccount;
+
+    @FindBy(xpath = "//div[@class='page-header']")
+    public WebElement deleteAccountVisible;
+
+    // (css = "[onclick=\"addElement()\"]") with css like that
+
+
 
 
 
