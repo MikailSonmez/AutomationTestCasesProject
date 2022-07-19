@@ -1,4 +1,4 @@
-Feature: US1003 login user correct email password
+Feature: US1004 login user correct email password
   @LoginUserCorrectEmailPassword
   Scenario: TC04_Login user correct email password
   Given Launch browser Navigate to url 'http://automationexercise.com'
