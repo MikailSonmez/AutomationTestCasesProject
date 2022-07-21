@@ -34,8 +34,9 @@ public class AutomationExerciseDefinitions {
         String actualUrl=Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains("https://automationexercise.com/"));
     }
-    @Given("Click on {string} button")
-    public void click_on_button(String string) {
+
+    @Given("Click on signup Login {string} button")
+    public void click_on_signup_login_button(String string) {
         automationExercisePage.signupLoginButton.click();
     }
     @Given("Verify {string} is visible")
@@ -93,6 +94,7 @@ public class AutomationExerciseDefinitions {
     @Then("Click continue {string} button")
     public void click_continue_button(String string) {
         automationExercisePage.continueButton.click();
+
     }
     @Given("Verify that logged username {string} is visible")
     public void verify_that_logged_username_is_visible(String string) {
@@ -123,6 +125,17 @@ public class AutomationExerciseDefinitions {
     @Given("Click login {string} button")
     public void click_login_button(String string) {
         automationExercisePage.loginLoginButton.click();
+
+    }
+
+    @Given("Enter incorrect email address and password")
+    public void enter_incorrect_email_address_and_password() {
+        automationExercisePage.loginEmailAdressBox.sendKeys(ConfigReader.getProperty("AutomationExerciseEmailIncorrect"));
+        automationExercisePage.loginPasswordAdressBox.sendKeys(ConfigReader.getProperty("AutomationExercisePasswordIncorrect"));
+    }
+    @Then("Verify error {string} is visible")
+    public void verify_error_is_visible(String string) {
+        automationExercisePage.verifyErrorIsVisible.isDisplayed();
 
     }
 }

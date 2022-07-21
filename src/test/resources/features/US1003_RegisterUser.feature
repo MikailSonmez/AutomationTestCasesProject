@@ -3,7 +3,7 @@ Feature: US1003 register user
   Scenario: TC03_Register User
     Given Launch browser Navigate to url 'http://automationexercise.com'
     Then Verify that home page is visible successfully
-    Given Click on 'Signup / Login' button
+    Given Click on signup Login 'Signup / Login' button
     And Verify 'New User Signup!' is visible
     Then Enter name and email address
     Given Click signup 'Signup' button

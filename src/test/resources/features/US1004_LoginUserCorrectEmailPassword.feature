@@ -3,7 +3,7 @@ Feature: US1004 login user correct email password
   Scenario: TC04_Login user correct email password
   Given Launch browser Navigate to url 'http://automationexercise.com'
   And Verify that home page is visible successfully
-  Given Click on 'Signup / Login' button
+  Given Click on signup Login 'Signup / Login' button
   And Verify login to your account 'Login to your account' is visible
   Then Enter correct email address and password
   Given Click login 'login' button

@@ -5,10 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18b1f8d4-c9f9-4166-b6f8-53b5c8dd125a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1005_LoginUserIncorretEmailPassword.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/configuration.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AutomationExercisePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AutomationExercisePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/AutomationExerciseDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AutomationExerciseDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1003_RegisterUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1003_RegisterUser.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1004_LoginUserCorrectEmailPassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1004_LoginUserCorrectEmailPassword.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1005_LoginUserIncorretEmailPassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1005_LoginUserIncorretEmailPassword.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +42,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Cucumber Java.Feature: US1005_LoginUserIncorretEmailPassword">
+  <component name="RunManager" selected="JUnit.Runner">
     <configuration name="Feature: US1003_RegisterUser" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1003_RegisterUser.feature" />
@@ -134,8 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: US1005_LoginUserIncorretEmailPassword" />
         <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Feature: US1005_LoginUserIncorretEmailPassword" />
         <item itemvalue="Cucumber Java.Feature: US1003_RegisterUser" />
         <item itemvalue="Cucumber Java.Scenario: TC03_Register User" />
         <item itemvalue="Cucumber Java.Feature: US1004_LoginUserCorrectEmailPassword" />

@@ -69,6 +69,9 @@ public class AutomationExercisePage {
     @FindBy(xpath = "(//button[@type='submit'])[1]")
     public WebElement loginLoginButton;
 
+    @FindBy(xpath = "//p[@style='color: red;']")
+    public WebElement verifyErrorIsVisible;
+
     // (css = "[onclick=\"addElement()\"]") with css like that
 
 
