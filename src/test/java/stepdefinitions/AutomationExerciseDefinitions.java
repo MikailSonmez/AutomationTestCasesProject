@@ -124,7 +124,7 @@ public class AutomationExerciseDefinitions {
     }
     @Given("Click login {string} button")
     public void click_login_button(String string) {
-        automationExercisePage.loginLoginButton.click();
+        automationExercisePage.loginToYourAccountButton.click();
 
     }
 
@@ -137,5 +137,15 @@ public class AutomationExerciseDefinitions {
     public void verify_error_is_visible(String string) {
         automationExercisePage.verifyErrorIsVisible.isDisplayed();
 
+    }
+
+    @Given("Click logout {string} button")
+    public void click_logout_button(String string) {
+        automationExercisePage.logoutButton.click();
+    }
+    @Then("Verify that user is navigated to login page")
+    public void verify_that_user_is_navigated_to_login_page() {
+        String actualUrl=Driver.getDriver().getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains("https://automationexercise.com/"));
     }
 }

@@ -66,11 +66,14 @@ public class AutomationExercisePage {
     @FindBy(xpath = "//input[@data-qa='login-password']")
     public WebElement loginPasswordAdressBox;
 
-    @FindBy(xpath = "(//button[@type='submit'])[1]")
-    public WebElement loginLoginButton;
+    @FindBy(xpath = "//button[@data-qa='login-button']")
+    public WebElement loginToYourAccountButton;
 
     @FindBy(xpath = "//p[@style='color: red;']")
     public WebElement verifyErrorIsVisible;
+
+    @FindBy(xpath = "(//a[@style='color:brown;'])[1]")
+    public WebElement logoutButton;
 
     // (css = "[onclick=\"addElement()\"]") with css like that
 
