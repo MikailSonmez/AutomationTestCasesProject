@@ -75,6 +75,9 @@ public class AutomationExercisePage {
     @FindBy(xpath = "(//a[@style='color:brown;'])[1]")
     public WebElement logoutButton;
 
+    @FindBy(xpath = "//p[contains(text(), 'Email Address already exist!')]")
+    public WebElement emailAddressAlreadyExist;
+
     // (css = "[onclick=\"addElement()\"]") with css like that
 
 

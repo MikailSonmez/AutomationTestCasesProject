@@ -148,4 +148,10 @@ public class AutomationExerciseDefinitions {
         String actualUrl=Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains("https://automationexercise.com/"));
     }
+
+    @Given("Verify error email adress already exist {string} is visible")
+    public void verify_error_email_adress_already_exist_is_visible(String string) {
+        automationExercisePage.emailAddressAlreadyExist.isDisplayed();
+    }
+
 }
