@@ -78,6 +78,28 @@ public class AutomationExercisePage {
     @FindBy(xpath = "//p[contains(text(), 'Email Address already exist!')]")
     public WebElement emailAddressAlreadyExist;
 
+    @FindBy(xpath = "//a[text()=' Contact us']")
+    public WebElement contactUsButton;
+
+    @FindBy(xpath = "//h2[text()='Get In Touch']")
+    public WebElement getInTouchVisible;
+
+    @FindBy(xpath = "//*[@id=\"contact-us-form\"]/div[1]/input")
+    public WebElement getInTouchNameBox;
+
+    @FindBy(xpath = "//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[1]/a")
+    public WebElement getInTouchChooseFile;
+
+    @FindBy(xpath = "//input[@type='submit']")
+    public WebElement getInTouchSubmitButton;
+
+    @FindBy(xpath = "//*[@id=\"contact-page\"]/div[2]/div[1]/div/div[2]")
+    public WebElement getInTouchSuccessVisible;
+
+    @FindBy(xpath = "//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[1]/a")
+    public WebElement homeButton;
+
+
     // (css = "[onclick=\"addElement()\"]") with css like that
 
 

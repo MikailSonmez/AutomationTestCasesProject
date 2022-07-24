@@ -154,4 +154,51 @@ public class AutomationExerciseDefinitions {
         automationExercisePage.emailAddressAlreadyExist.isDisplayed();
     }
 
+    @Then("Click on contact us {string} button")
+    public void click_on_contact_us_button(String string) {
+        automationExercisePage.contactUsButton.click();
+
+    }
+    @Given("Verify get in touch {string} is visible")
+    public void verify_get_in_touch_is_visible(String string) {
+        automationExercisePage.getInTouchVisible.isDisplayed();
+
+    }
+    @Given("Enter name, email, subject and message")
+    public void enter_name_email_subject_and_message() {
+        automationExercisePage.getInTouchNameBox.click();
+        actions.sendKeys("mikail").sendKeys(Keys.TAB)
+                .sendKeys("asdas@gmail.com").sendKeys(Keys.TAB).sendKeys("Subject").sendKeys(Keys.TAB)
+                .sendKeys("Another Life").perform();
+
+    }
+    @Then("Upload file")
+    public void upload_file() {
+        automationExercisePage.getInTouchChooseFile.sendKeys("/Users/mikai/Downloads/asdasdas.txt");
+
+
+    }
+    @Given("Click submit {string} button")
+    public void click_submit_button(String string) {
+        automationExercisePage.getInTouchSubmitButton.click();
+
+    }
+    @Given("Click OK button")
+    public void click_ok_button() {
+        driver.switchTo().alert().accept();
+
+    }
+    @Then("Verify success message {string} is visible")
+    public void verify_success_message_is_visible(String string) {
+        automationExercisePage.getInTouchSuccessVisible.isDisplayed();
+
+    }
+    @Then("Click {string} button and verify that landed to home page successfully")
+    public void click_button_and_verify_that_landed_to_home_page_successfully(String string) {
+        automationExercisePage.homeButton.click();
+        String actualUrl=Driver.getDriver().getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains("https://automationexercise.com/"));
+
+    }
+
 }
