@@ -174,7 +174,7 @@ public class AutomationExerciseDefinitions {
     }
     @Then("Upload file")
     public void upload_file() {
-        automationExercisePage.getInTouchChooseFile.sendKeys("/Users/mikai/Downloads/asdasdas.txt");
+        automationExercisePage.getInTouchChooseFile.sendKeys("C:/Users/mikai/Downloads/asdasdas.txt");
 
 
     }

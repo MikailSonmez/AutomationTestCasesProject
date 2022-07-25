@@ -1,6 +1,6 @@
-Feature: US1005 register user existing email
+Feature: US1007 register user existing email
   @RegisterUserExistingEmail
-  Scenario: TC05_Register user existing email
+  Scenario: TC07_Register user existing email
     Given Launch browser Navigate to url 'http://automationexercise.com'
     Given Verify that home page is visible successfully
     Given Click on signup Login 'Signup / Login' button

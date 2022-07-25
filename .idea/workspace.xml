@@ -5,11 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18b1f8d4-c9f9-4166-b6f8-53b5c8dd125a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1008_ContactUsForm.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1009_VerifyTestCasesPage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1010_VerifyAllProductsDetailPage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1011_SearchProduct.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1012_VerifySubscriptionHomePage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1013_VerifySubscriptionCartPage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1014_AddProductsCart.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1015_VerifyProductQuantityCart.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1016_PlaceOrderRegisterWhileCheckout.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1017_PlaceOrderRegisterBeforeCheckout.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1018_PlaceOrderLoginBeforeCheckout.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1019_RemoveProductsFromCart.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1020_ViewCategoryProducts.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1021_ViewCartBrandProducts.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1022_SearchProductsVerifyCartAfterLogin.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1023_AddReviewProduct.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1024_AddCartRecommendedItems.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1025_VerifyAddressDetailsCheckoutPage.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1026_DownloadInvoiceAfterPurchaseOrder.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1027_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1028_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AutomationExercisePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AutomationExercisePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/AutomationExerciseDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AutomationExerciseDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1005_LoginUserIncorretEmailPassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1005_LoginUserIncorretEmailPassword.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1006_LogoutUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1006_LogoutUser.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1007_RegisterUserExistingEmail.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1007_RegisterUserExistingEmail.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1008_ContactUsForm.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1008_ContactUsForm.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +51,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2C2rvNdjT78tRVRApScHj3nbz96" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>

@@ -6,5 +6,5 @@ Feature: US1005 login user incorrect email password
     Then Click on signup Login 'Signup / Login' button
     Given Verify 'Login to your account' is visible
     And Enter incorrect email address and password
-    Then Click 'login' button
+    Then Click login 'login' button
     Then Verify error 'Your email or password is incorrect!' is visible

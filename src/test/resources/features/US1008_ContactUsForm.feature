@@ -1,6 +1,6 @@
-Feature: US1005 contact us form
+Feature: US1008 contact us form
   @ContactUsForm
-  Scenario: TC05_Contact us form
+  Scenario: TC08_Contact us form
     Given Launch browser Navigate to url 'http://automationexercise.com'
     And Verify that home page is visible successfully
     Then Click on contact us 'Contact Us' button
