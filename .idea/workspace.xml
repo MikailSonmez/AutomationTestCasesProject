@@ -5,32 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="18b1f8d4-c9f9-4166-b6f8-53b5c8dd125a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1009_VerifyTestCasesPage.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1010_VerifyAllProductsDetailPage.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1011_SearchProduct.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1012_VerifySubscriptionHomePage.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1013_VerifySubscriptionCartPage.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1014_AddProductsCart.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1015_VerifyProductQuantityCart.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1016_PlaceOrderRegisterWhileCheckout.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1017_PlaceOrderRegisterBeforeCheckout.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1018_PlaceOrderLoginBeforeCheckout.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1019_RemoveProductsFromCart.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1020_ViewCategoryProducts.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1021_ViewCartBrandProducts.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1022_SearchProductsVerifyCartAfterLogin.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1023_AddReviewProduct.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1024_AddCartRecommendedItems.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1025_VerifyAddressDetailsCheckoutPage.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1026_DownloadInvoiceAfterPurchaseOrder.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1027_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/features/US1028_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AutomationExercisePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AutomationExercisePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/AutomationExerciseDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AutomationExerciseDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1005_LoginUserIncorretEmailPassword.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1005_LoginUserIncorretEmailPassword.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1006_LogoutUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1006_LogoutUser.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1007_RegisterUserExistingEmail.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1007_RegisterUserExistingEmail.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1008_ContactUsForm.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1008_ContactUsForm.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,14 +43,14 @@
   }
 }</component>
   <component name="RunManager" selected="JUnit.Runner">
-    <configuration name="Feature: US1005_LoginUserIncorretEmailPassword" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US1010_VerifyAllProductsDetailPage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1005_LoginUserIncorretEmailPassword.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1010_VerifyAllProductsDetailPage.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationTestCasesProject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US1005_LoginUserIncorretEmailPassword" />
+      <option name="SUGGESTED_NAME" value="Feature: US1010_VerifyAllProductsDetailPage" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -83,14 +62,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: US1006_LogoutUser" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US1011_SearchProduct" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1006_LogoutUser.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1011_SearchProduct.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationTestCasesProject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US1006_LogoutUser" />
+      <option name="SUGGESTED_NAME" value="Feature: US1011_SearchProduct" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -102,14 +81,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: US1007_RegisterUserExistingEmail" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US1012_VerifySubscriptionHomePage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1007_RegisterUserExistingEmail.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1012_VerifySubscriptionHomePage.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationTestCasesProject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US1007_RegisterUserExistingEmail" />
+      <option name="SUGGESTED_NAME" value="Feature: US1012_VerifySubscriptionHomePage" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -121,14 +100,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: US1008_ContactUsForm" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US1013_VerifySubscriptionCartPage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1008_ContactUsForm.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1013_VerifySubscriptionCartPage.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationTestCasesProject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US1008_ContactUsForm" />
+      <option name="SUGGESTED_NAME" value="Feature: US1013_VerifySubscriptionCartPage" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -158,10 +137,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Runner" />
-        <item itemvalue="Cucumber Java.Feature: US1008_ContactUsForm" />
-        <item itemvalue="Cucumber Java.Feature: US1007_RegisterUserExistingEmail" />
-        <item itemvalue="Cucumber Java.Feature: US1006_LogoutUser" />
-        <item itemvalue="Cucumber Java.Feature: US1005_LoginUserIncorretEmailPassword" />
+        <item itemvalue="Cucumber Java.Feature: US1013_VerifySubscriptionCartPage" />
+        <item itemvalue="Cucumber Java.Feature: US1012_VerifySubscriptionHomePage" />
+        <item itemvalue="Cucumber Java.Feature: US1011_SearchProduct" />
+        <item itemvalue="Cucumber Java.Feature: US1010_VerifyAllProductsDetailPage" />
       </list>
     </recent_temporary>
   </component>

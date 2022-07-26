@@ -13,6 +13,7 @@ import pages.AutomationExercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.JSutils;
+import utilities.ReusableMethods;
 
 import static utilities.Driver.driver;
 
@@ -199,6 +200,93 @@ public class AutomationExerciseDefinitions {
         String actualUrl=Driver.getDriver().getCurrentUrl();
         Assert.assertTrue(actualUrl.contains("https://automationexercise.com/"));
 
+    }
+
+    @Then("Click on test cases {string} button")
+    public void click_on_test_cases_button(String string) {
+        automationExercisePage.testCasesButton.click();
+    }
+    @Then("Verify user is navigated to test cases page successfully")
+    public void verify_user_is_navigated_to_test_cases_page_successfully() {
+        automationExercisePage.testCasesText.isDisplayed();
+    }
+
+    @Then("Click on products {string} button")
+    public void click_on_products_button(String string) {
+        automationExercisePage.productsButton.click();
+
+    }
+    @Given("Verify user is navigated to ALL PRODUCTS page successfully")
+    public void verify_user_is_navigated_to_all_products_page_successfully() {
+        automationExercisePage.specialOfferBigSaleImage.isDisplayed();
+    }
+    @Given("The products list is visible")
+    public void the_products_list_is_visible() {
+        automationExercisePage.allProductsText.isDisplayed();
+
+    }
+    @Then("Click on view product {string} of first product")
+    public void click_on_view_product_of_first_product(String string) {
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).perform();
+        automationExercisePage.productsViewFirstProduct.click();
+
+    }
+    @Given("User is landed to product detail page")
+    public void user_is_landed_to_product_detail_page() {
+        automationExercisePage.firstProductImage.isDisplayed();
+
+    }
+    @Then("Verify that detail detail is visible: product name, category, price, availability, condition, brand")
+    public void verify_that_detail_detail_is_visible_product_name_category_price_availability_condition_brand() {
+        automationExercisePage.firstProductName.isDisplayed();
+        automationExercisePage.firstProductCategory.isDisplayed();
+        automationExercisePage.firstProductPrice.isDisplayed();
+        automationExercisePage.firstProductavailability.isDisplayed();
+        automationExercisePage.firstProductcondition.isDisplayed();
+        automationExercisePage.firstProductbrand.isDisplayed();
+
+
+    }
+
+    @Given("Enter product name in search input and click search button")
+    public void enter_product_name_in_search_input_and_click_search_button() {
+        automationExercisePage.searchProductTextBox.sendKeys("blue");
+        automationExercisePage.searchProductsTextBoxButton.click();
+    }
+    @Given("Verify searched products {string} is visible")
+    public void verify_searched_products_is_visible(String string) {
+        automationExercisePage.searchProductsTextVisible.isDisplayed();
+
+    }
+    @Then("Verify all the products related to search are visible")
+    public void verify_all_the_products_related_to_search_are_visible() {
+        automationExercisePage.blue.isDisplayed();
+
+    }
+
+    @Then("Scroll down to footer")
+    public void scroll_down_to_footer() {
+        ReusableMethods.scrollDown(driver);
+    }
+    @Given("Verify text subscription {string}")
+    public void verify_text_subscription(String string) {
+        automationExercisePage.subscriptionText.isDisplayed();
+    }
+    @Given("Enter email address in input and click arrow button")
+    public void enter_email_address_in_input_and_click_arrow_button() {
+        automationExercisePage.subscriptionYourEmailAddressTextBox.sendKeys("asdas@gmail.com");
+
+    }
+    @Then("Verify success message you have been successfully subscribed! {string} is visible")
+    public void verify_success_message_you_have_been_successfully_subscribed_is_visible(String string) {
+        automationExercisePage.subscriptionYouSuccessfullySubscribed.isDisplayed();
+    }
+
+    @Then("Click cart {string} button")
+    public void click_cart_button(String string) {
+        automationExercisePage.cartButton.click();
     }
 
 }
