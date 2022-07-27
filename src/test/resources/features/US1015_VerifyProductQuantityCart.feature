@@ -6,6 +6,6 @@ Feature: US1015 verify product quantity cart
     Then Click view product 'View Product' for any product on home page
     Given Verify product detail is opened
     And Increase quantity to 4
-    Then Click add to cart'Add to cart' button
-    Given Click view cart 'View Cart' button
+    Then Click add to cart 'Add to cart' button
+    Given Click view cart add to cart 'View Cart' button
     Then Verify that product is displayed in cart page with exact quantity

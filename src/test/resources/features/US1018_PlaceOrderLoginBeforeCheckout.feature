@@ -9,11 +9,11 @@ Feature: US1018 place order login before checkout
     And Add products to cart
     Given Click cart 'Cart' button
     And Verify that cart page is displayed
-    Then Click Proceed To Checkout
+    Then Click proceed to checkout 'Proceed To Checkout' button
     Given Verify Address Details and Review Your Order
     And Enter description in comment text area and click place order 'Place Order'
     Then Enter payment details: Name on Card, Card Number, CVC, Expiration date
     Given Click pay and confirm order 'Pay and Confirm Order' button
     Then Verify success message your order has been placed successfully! 'Your order has been placed successfully!'
     Given Click delete 'Delete Account' button
-    Then Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+    Then Verify that delete 'ACCOUNT DELETED!' is visible and click 'Continue' button

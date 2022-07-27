@@ -14,4 +14,4 @@ Feature: US1025 verify address details checkout page
     Then Verify that the delivery address is same address filled at the time registration of account
     Given Verify that the billing address is same address filled at the time registration of account
     Then Click delete 'Delete Account' button
-    Then Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+    Then Verify that delete 'ACCOUNT DELETED!' is visible and click 'Continue' button

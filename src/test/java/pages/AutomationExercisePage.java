@@ -162,6 +162,92 @@ public class AutomationExercisePage {
     @FindBy(xpath = "//*[@id=\"header\"]/div/div/div/div[2]/div/ul/li[3]/a")
     public WebElement cartButton;
 
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/img")
+    public WebElement firstProductImageAllProducts;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/a")
+    public WebElement firstProductAddToCart;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/div[3]/div/div[1]/div[1]/img")
+    public WebElement secondProductImage;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/div[3]/div/div[1]/div[1]/a")
+    public WebElement secondProductAddToCart;
+
+    @FindBy(xpath = "//*[@id=\"cartModal\"]/div/div/div[3]/button")
+    public WebElement continueShopping;
+
+    @FindBy(xpath = "//*[@id=\"product-1\"]/td[2]")
+    public WebElement cartVerifyFirstProduct;
+
+    @FindBy(xpath = "//*[@id=\"product-1\"]/td[3]")
+    public WebElement cartVerifyFirstProductPrice;
+
+    @FindBy(xpath = "//*[@id=\"product-1\"]/td[4]")
+    public WebElement cartVerifyFirstProductQuantity;
+
+    @FindBy(xpath = "//*[@id=\"product-1\"]/td[5]")
+    public WebElement cartVerifyFirstProductTotalPrice;
+
+    @FindBy(xpath = "//*[@id=\"product-2\"]/td[2]")
+    public WebElement cartVerifySecondProduct;
+
+    @FindBy(xpath = "//*[@id=\"product-2\"]/td[3]")
+    public WebElement cartVerifySecondProductPrice;
+
+    @FindBy(xpath = "//*[@id=\"product-1\"]/td[4]")
+    public WebElement cartVerifySecondProductQuantity;
+
+    @FindBy(xpath = "//*[@id=\"product-2\"]/td[5]")
+    public WebElement cartVerifySecondProductTotalPrice;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div[1]/div[4]/div/div[2]/ul/li/a")
+    public WebElement homePageThirdProductViewProduct;
+
+    @FindBy(xpath = "/html/body/section/div/div/div[2]/div[2]/div[2]/div")
+    public WebElement thirdProductDetailsVerify;
+
+    @FindBy(xpath = "//*[@id=\"quantity\"]")
+    public WebElement thirdProductIncreaseQuantity;
+
+    @FindBy(xpath = "/html/body/section/div/div/div[2]/div[2]/div[2]/div/span/button")
+    public WebElement thirdProductAddToCart;
+
+    @FindBy(xpath = "//*[@id=\"cartModal\"]/div/div/div[2]/p[2]/a/u")
+    public WebElement thirdProductViewCart;
+
+    @FindBy(xpath = "//*[@id=\"product-3\"]/td[4]/button")
+    public WebElement thirdProductQuantityVerify;
+
+    @FindBy(xpath = "//*[@id=\"cart_items\"]/div/div[1]/ol/li[2]")
+    public WebElement cartPageVisibleShoppingCart;
+
+    @FindBy(xpath = "//*[@id=\"do_action\"]/div[1]/div/div/a\n")
+    public WebElement cartPageProceedToCheckout;
+
+    @FindBy(xpath = "//*[@id=\"checkoutModal\"]/div/div/div[2]/p[2]/a/u")
+    public WebElement cartPageRegisterLogin;
+
+    @FindBy(xpath = "//*[@id=\"address_delivery\"]")
+    public WebElement cartPageYourDeliveryAddress;
+
+    @FindBy(xpath = "//*[@id=\"address_invoice\"]")
+    public WebElement cartPageYourBillingAddress;
+
+    @FindBy(xpath = "//*[@id=\"ordermsg\"]/textarea")
+    public WebElement cartPageCommentText;
+
+    @FindBy(xpath = "//*[@id=\"cart_items\"]/div/div[7]/a")
+    public WebElement cartPageCommentTextPlaceOrder;
+
+    @FindBy(xpath = "//*[@id=\"payment-form\"]/div[1]/div/input")
+    public WebElement cartPageEnterPaymentDetailsNameOnCard;
+
+    @FindBy(xpath = "//*[@id=\"submit\"]")
+    public WebElement cartPagePayAndConfirmOrder;
+
+    @FindBy(xpath = "//*[@id=\"success_message\"]/div")
+    public WebElement cartPageVerifyOrderPlacedSuccessfully;
 
 
 

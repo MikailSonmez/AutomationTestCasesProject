@@ -21,4 +21,4 @@ Feature: US1026 download invoice after purchase order
     And Click download invoice 'Download Invoice' button and verify invoice is downloaded successfully.
     Then Click continue invoice 'Continue' button
     Given Click delete 'Delete Account' button
-    Then Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+    Then Verify that delete 'ACCOUNT DELETED!' is visible and click 'Continue' button

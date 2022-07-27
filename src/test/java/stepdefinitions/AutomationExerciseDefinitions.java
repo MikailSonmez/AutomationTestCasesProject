@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.Wait;
 import pages.AutomationExercisePage;
 import utilities.ConfigReader;
 import utilities.Driver;
@@ -107,10 +108,9 @@ public class AutomationExerciseDefinitions {
         automationExercisePage.deleteAccount.click();
 
     }
-    @Then("Verify that {string} is visible and click {string} button")
-    public void verify_that_is_visible_and_click_button(String string, String string2) {
+    @Then("Verify that delete {string} is visible and click {string} button")
+    public void verify_that_delete_is_visible_and_click_button(String string, String string2) {
         automationExercisePage.deleteAccountVisible.isDisplayed();
-
     }
 
     @Given("Verify login to your account {string} is visible")
@@ -288,5 +288,176 @@ public class AutomationExerciseDefinitions {
     public void click_cart_button(String string) {
         automationExercisePage.cartButton.click();
     }
+
+    @Given("Hover over first product and click {string}")
+    public void hover_over_first_product_and_click(String string) {
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).perform();
+        actions.moveToElement(automationExercisePage.firstProductImageAllProducts).perform();
+        automationExercisePage.firstProductAddToCart.click();
+    }
+    @Given("Click continue shopping {string} button")
+    public void click_continue_shopping_button(String string) {
+        automationExercisePage.continueShopping.click();
+
+    }
+    @Then("Hover over second product and click {string}")
+    public void hover_over_second_product_and_click(String string) {
+        actions.moveToElement(automationExercisePage.secondProductImage).perform();
+        automationExercisePage.secondProductAddToCart.click();
+    }
+    @Given("Click view cart 'View Cart' button")
+    public void click_view_cart_view_cart_button() {
+        automationExercisePage.cartButton.click();
+
+    }
+    @Given("Verify both products are added to Cart")
+    public void verify_both_products_are_added_to_cart() {
+        automationExercisePage.cartVerifyFirstProduct.isDisplayed();
+        automationExercisePage.cartVerifySecondProduct.isDisplayed();
+
+    }
+    @Then("Verify their prices, quantity and total price")
+    public void verify_their_prices_quantity_and_total_price() {
+        automationExercisePage.cartVerifyFirstProductPrice.isEnabled();
+        automationExercisePage.cartVerifyFirstProductQuantity.isEnabled();
+        automationExercisePage.cartVerifyFirstProductTotalPrice.isEnabled();
+
+        automationExercisePage.cartVerifySecondProductPrice.isEnabled();
+        automationExercisePage.cartVerifySecondProductQuantity.isEnabled();
+        automationExercisePage.cartVerifySecondProductTotalPrice.isEnabled();
+
+    }
+
+    @Then("Click view product {string} for any product on home page")
+    public void click_view_product_for_any_product_on_home_page(String string) {
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).perform();
+        automationExercisePage.homePageThirdProductViewProduct.click();
+    }
+    @Given("Verify product detail is opened")
+    public void verify_product_detail_is_opened() {
+        automationExercisePage.thirdProductDetailsVerify.isDisplayed();
+
+    }
+    @Given("Increase quantity to {int}")
+    public void increase_quantity_to(Integer int1) {
+        automationExercisePage.thirdProductIncreaseQuantity.sendKeys("4");
+
+    }
+    @Then("Click add to cart {string} button")
+    public void click_add_to_cart_button(String string) {
+        automationExercisePage.thirdProductAddToCart.click();
+
+    }
+    @Given("Click view cart add to cart 'View Cart' button")
+    public void click_view_cart_add_to_cart_view_cart_button() {
+        automationExercisePage.thirdProductViewCart.click();
+
+    }
+    @Then("Verify that product is displayed in cart page with exact quantity")
+    public void verify_that_product_is_displayed_in_cart_page_with_exact_quantity() {
+        String actualQuatity=automationExercisePage.thirdProductQuantityVerify.getText();
+        Assert.assertTrue(actualQuatity.contains("41"));
+    }
+
+    @Then("Add products to cart")
+    public void add_products_to_cart() {
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).perform();
+        actions.moveToElement(automationExercisePage.secondProductImage).perform();
+        automationExercisePage.secondProductAddToCart.click();
+        automationExercisePage.continueShopping.click();
+        actions.sendKeys(Keys.ARROW_UP).sendKeys(Keys.ARROW_UP).sendKeys(Keys.ARROW_UP)
+                .sendKeys(Keys.ARROW_UP).sendKeys(Keys.ARROW_UP).perform();
+
+
+    }
+    @Given("Verify that cart page is displayed")
+    public void verify_that_cart_page_is_displayed() {
+        automationExercisePage.cartPageVisibleShoppingCart.isDisplayed();
+
+    }
+    @Then("Click proceed to checkout {string} button")
+    public void click_proceed_to_checkout_button(String string) {
+        automationExercisePage.cartPageProceedToCheckout.click();
+
+    }
+    @Given("Click on signup Login cart page {string} button")
+    public void click_on_signup_login_cart_page_button(String string) {
+        automationExercisePage.cartPageRegisterLogin.click();
+    }
+
+    @Given("Fill all details in Signup and create account")
+    public void fill_all_details_in_signup_and_create_account() {
+        automationExercisePage.newUserNameTextBox.sendKeys("aliasd");
+        automationExercisePage.newUserEmailTextBox.sendKeys("asdasdasf@gmail.com");
+        automationExercisePage.newUserSignUpButton.click();
+
+        automationExercisePage.titleMr.click();
+        actions.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("Mikail44584458").sendKeys(Keys.TAB)
+                .click().sendKeys("17").sendKeys(Keys.TAB).click().sendKeys("September")
+                .click().sendKeys(Keys.TAB).click().sendKeys("2005").click().perform();
+
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                        .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                        .perform();
+
+
+        automationExercisePage.firstNameBox.sendKeys("mikail");
+        actions.sendKeys(Keys.TAB)
+                .sendKeys("donmez").sendKeys(Keys.TAB).sendKeys("linkedIn").sendKeys(Keys.TAB)
+                .sendKeys("yesiltepe").sendKeys(Keys.TAB).sendKeys(Keys.TAB).click()
+                .moveToElement(automationExercisePage.singapore).click().sendKeys(Keys.TAB).sendKeys("eastanatolia")
+                .sendKeys(Keys.TAB).sendKeys("malatya").sendKeys(Keys.TAB).sendKeys("44000")
+                .sendKeys(Keys.TAB).sendKeys("05555564565").perform();
+
+        automationExercisePage.createAccountButton.click();
+    }
+
+    @Given("Verify Address Details and Review Your Order")
+    public void verify_address_details_and_review_your_order() {
+        String deliveryAddressText = automationExercisePage.cartPageYourDeliveryAddress.getText();
+        String billingAddressText = automationExercisePage.cartPageYourBillingAddress.getText();
+        Assert.assertEquals(deliveryAddressText,billingAddressText);
+    }
+    @Given("Enter description in comment text area and click place order {string}")
+    public void enter_description_in_comment_text_area_and_click_place_order(String string) {
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        automationExercisePage.cartPageCommentText.sendKeys("so good!");
+        automationExercisePage.cartPageCommentTextPlaceOrder.click();
+    }
+    @Then("Enter payment details: Name on Card, Card Number, CVC, Expiration date")
+    public void enter_payment_details_name_on_card_card_number_cvc_expiration_date() {
+        automationExercisePage.cartPageEnterPaymentDetailsNameOnCard.sendKeys("ali");
+        actions.sendKeys(Keys.TAB).sendKeys("12312312312312").sendKeys(Keys.TAB)
+                .sendKeys("153").sendKeys(Keys.TAB).sendKeys("30").sendKeys(Keys.TAB)
+                .sendKeys("2150").perform();
+    }
+    @Given("Click pay and confirm order 'Pay and Confirm Order' button")
+    public void click_pay_and_confirm_order_pay_and_confirm_order_button() {
+        automationExercisePage.cartPagePayAndConfirmOrder.click();
+
+    }
+    @Then("Verify success message your order has been placed successfully! {string}")
+    public void verify_success_message_your_order_has_been_placed_successfully(String string) {
+        automationExercisePage.cartPageVerifyOrderPlacedSuccessfully.isDisplayed();
+    }
+
+    @Given("Fill email, password and click login {string} button")
+    public void fill_email_password_and_click_login_button(String string) {
+        automationExercisePage.loginEmailAdressBox.sendKeys(ConfigReader.getProperty("AutomationExerciseEmail"));
+        automationExercisePage.loginPasswordAdressBox.sendKeys(ConfigReader.getProperty("AutomationExercisePassword"));
+
+        automationExercisePage.loginToYourAccountButton.click();
+
+    }
+    @Given("Click pay and confirm order {string} button")
+    public void click_pay_and_confirm_order_button(String string) {
+        automationExercisePage.cartPagePayAndConfirmOrder.click();
+
+    }
+
 
 }
