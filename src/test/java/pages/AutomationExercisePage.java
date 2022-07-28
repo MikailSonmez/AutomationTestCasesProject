@@ -147,8 +147,8 @@ public class AutomationExercisePage {
     @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/h2")
     public WebElement searchProductsTextVisible;
 
-    @FindBy(xpath = "blue")
-    public WebElement blue;
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div")
+    public WebElement searchProductsFeatures;
 
     @FindBy(xpath = "//*[@id=\"footer\"]/div[1]/div/div/div[2]/div/h2")
     public WebElement subscriptionText;
@@ -249,8 +249,98 @@ public class AutomationExercisePage {
     @FindBy(xpath = "//*[@id=\"success_message\"]/div")
     public WebElement cartPageVerifyOrderPlacedSuccessfully;
 
+    @FindBy(xpath = "//*[@id=\"product-2\"]/td[6]/a")
+    public WebElement cartPageSecondProductXButton;
 
+    @FindBy(xpath = "//*[@id=\"empty_cart\"]/p/b")
+    public WebElement cartPageVerifyProductRemovedFromCart;
 
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[1]/div/h2")
+    public WebElement categoryHomePageVisible;
+
+    @FindBy(xpath = "//*[@id=\"accordian\"]/div[1]/div[1]/h4/a")
+    public WebElement categoryWomen;
+
+    @FindBy(xpath = "//*[@id=\"Women\"]/div/ul/li[1]/a")
+    public WebElement categoryHomePageWomenDress;
+
+    @FindBy(xpath = "/html/body/section/div/div[2]/div[2]/div/h2")
+    public WebElement categoryWomenTopsProductsVisible;
+
+    @FindBy(xpath = "//*[@id=\"accordian\"]/div[2]/div[1]/h4/a")
+    public WebElement categoryMen;
+
+    @FindBy(xpath = "//*[@id=\"Men\"]/div/ul/li[2]/a")
+    public WebElement categoryMenJeans;
+
+    @FindBy(xpath = "/html/body/section/div/div[2]/div[2]/div/h2")
+    public WebElement categoryMenJeansProductsVisible;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[1]/div/div[2]/h2")
+    public WebElement brandsVisible;
+
+    @FindBy(xpath = "/html/body/section/div/div[2]/div[2]/div")
+    public WebElement brandsPolo;
+
+    @FindBy(xpath = "/html/body/section/div/div[2]/div[2]/div/h2/text()")
+    public WebElement brandPoloProductsVisible;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[1]/div/div[2]/div/ul/li[2]/a")
+    public WebElement brandsHM;
+
+    @FindBy(xpath = "/html/body/section/div/div[2]/div[2]/div")
+    public WebElement brandHMProductsVisible;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/div[2]/div/div[1]/div[1]/a")
+    public WebElement productsBlueProduct1;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/div[3]/div/div[1]/div[1]/a")
+    public WebElement productsBlueProduct2;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/div[4]/div/div[1]/div[1]/a")
+    public WebElement productsBlueProduct3;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/div[5]/div/div[1]/div[1]/a")
+    public WebElement productsBlueProduct4;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/div[6]/div/div[1]/div[1]/a")
+    public WebElement productsBlueProduct5;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/div[7]/div/div[1]/div[1]/a")
+    public WebElement productsBlueProduct6;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div/div[8]/div/div[1]/div[1]/a")
+    public WebElement productsBlueProduct7;
+
+    @FindBy(xpath = "//*[@id=\"product-1\"]")
+    public WebElement productsBlueProduct1Visible;
+
+    @FindBy(xpath = "//*[@id=\"product-16\"]")
+    public WebElement productsBlueProduct2Visible;
+
+    @FindBy(xpath = "//*[@id=\"product-21\"]")
+    public WebElement productsBlueProduct3Visible;
+
+    @FindBy(xpath = "//*[@id=\"product-24\"]")
+    public WebElement productsBlueProduct4Visible;
+
+    @FindBy(xpath = "//*[@id=\"product-37\"]")
+    public WebElement productsBlueProduct5Visible;
+
+    @FindBy(xpath = "//*[@id=\"product-41\"]")
+    public WebElement productsBlueProduct6Visible;
+
+    @FindBy(xpath = "//*[@id=\"product-41\"]")
+    public WebElement productsBlueProduct7Visible;
+
+    @FindBy(xpath = "//*[@id=\"name\"]")
+    public WebElement productsReviewName;
+
+    @FindBy(xpath = "//*[@id=\"button-review\"]")
+    public WebElement productReviewSubmitButton;
+
+    @FindBy(xpath = "//*[@id=\"review-section\"]/div/div/span")
+    public WebElement productReviewThankyouforReview;
 
 
     // (css = "[onclick=\"addElement()\"]") with css like that

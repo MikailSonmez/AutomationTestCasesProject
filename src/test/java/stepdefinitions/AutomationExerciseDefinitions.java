@@ -3,9 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
@@ -65,11 +63,13 @@ public class AutomationExerciseDefinitions {
         automationExercisePage.titleMr.click();
         actions.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("Mikail44584458").sendKeys(Keys.TAB)
                 .click().sendKeys("17").sendKeys(Keys.TAB).click().sendKeys("September")
-                .click().sendKeys(Keys.TAB).click().sendKeys("2005").click().perform();
+                .click().sendKeys(Keys.TAB).click().sendKeys("2005").click()
+                .sendKeys(Keys.TAB).perform();
 
     }
     @Given("Select checkbox {string}")
     public void select_checkbox(String string) {
+        Select select=new Select(driver.findElement(By.xpath("//*[@id=\"country\"]/option[7]")));
 
     }
     @Then("Fill details: First name, Last name, Company, Address, Address2, Country, State, City, Zipcode, Mobile Number")
@@ -262,7 +262,7 @@ public class AutomationExerciseDefinitions {
     }
     @Then("Verify all the products related to search are visible")
     public void verify_all_the_products_related_to_search_are_visible() {
-        automationExercisePage.blue.isDisplayed();
+        automationExercisePage.searchProductsFeatures.isDisplayed();
 
     }
 
@@ -398,7 +398,10 @@ public class AutomationExerciseDefinitions {
         automationExercisePage.titleMr.click();
         actions.sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys("Mikail44584458").sendKeys(Keys.TAB)
                 .click().sendKeys("17").sendKeys(Keys.TAB).click().sendKeys("September")
-                .click().sendKeys(Keys.TAB).click().sendKeys("2005").click().perform();
+                .click().sendKeys(Keys.TAB).click().sendKeys("2005").click()
+                .sendKeys(Keys.TAB).perform();
+
+        Select select=new Select(driver.findElement(By.xpath("//*[@id=\"country\"]/option[7]")));
 
         actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
                         .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
@@ -456,6 +459,170 @@ public class AutomationExerciseDefinitions {
     @Given("Click pay and confirm order {string} button")
     public void click_pay_and_confirm_order_button(String string) {
         automationExercisePage.cartPagePayAndConfirmOrder.click();
+
+    }
+
+    @Given("Click x {string} button corresponding to particular product")
+    public void click_x_button_corresponding_to_particular_product(String string) {
+        automationExercisePage.cartPageSecondProductXButton.click();
+    }
+    @Then("Verify that product is removed from the cart")
+    public void verify_that_product_is_removed_from_the_cart() {
+        automationExercisePage.cartPageVerifyProductRemovedFromCart.isDisplayed();
+
+    }
+
+    @Given("Verify that categories are visible on left side bar")
+    public void verify_that_categories_are_visible_on_left_side_bar() {
+        automationExercisePage.categoryHomePageVisible.isDisplayed();
+
+    }
+    @Given("Click on women {string} category")
+    public void click_on_women_category(String string) {
+        automationExercisePage.categoryWomen.click();
+
+    }
+    @Given("Click on any category link under women {string} category, for example: Dress")
+    public void click_on_any_category_link_under_women_category_for_example_dress(String string) {
+        automationExercisePage.categoryHomePageWomenDress.click();
+    }
+    @Then("Verify that category page is displayed and confirm text women tops products {string}")
+    public void verify_that_category_page_is_displayed_and_confirm_text_women_tops_products(String string) {
+        automationExercisePage.categoryWomenTopsProductsVisible.isDisplayed();
+    }
+    @Given("On left side bar, click on any sub-category link of men {string} category")
+    public void on_left_side_bar_click_on_any_sub_category_link_of_men_category(String string) {
+        automationExercisePage.categoryMen.click();
+        automationExercisePage.categoryMenJeans.click();
+    }
+    @Then("Verify that user is navigated to that category page")
+    public void verify_that_user_is_navigated_to_that_category_page() {
+        automationExercisePage.categoryMenJeansProductsVisible.isDisplayed();
+
+    }
+
+    @Given("Verify that Brands are visible on left side bar")
+    public void verify_that_brands_are_visible_on_left_side_bar() {
+        automationExercisePage.brandsVisible.isDisplayed();
+
+    }
+    @Given("Click on any brand name")
+    public void click_on_any_brand_name() {
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).perform();
+        automationExercisePage.brandsPolo.click();
+
+    }
+    @Given("Verify that user is navigated to brand page and brand products are displayed")
+    public void verify_that_user_is_navigated_to_brand_page_and_brand_products_are_displayed() {
+        String brandPoloPageUrl=Driver.getDriver().getCurrentUrl();
+        Assert.assertEquals(brandPoloPageUrl,"https://automationexercise.com/brand_products/Polo");
+        automationExercisePage.brandPoloProductsVisible.isDisplayed();
+    }
+    @Given("On left side bar, click on any other brand link")
+    public void on_left_side_bar_click_on_any_other_brand_link() {
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).perform();
+        automationExercisePage.brandsHM.click();
+
+    }
+    @Given("Verify that user is navigated to that brand page and can see products")
+    public void verify_that_user_is_navigated_to_that_brand_page_and_can_see_products() {
+        String brandHMPageUrl=Driver.getDriver().getCurrentUrl();
+        Assert.assertEquals(brandHMPageUrl,"https://automationexercise.com/brand_products/H&M");
+        automationExercisePage.brandHMProductsVisible.isDisplayed();
+    }
+
+
+    @Given("Add those products to cart")
+    public void add_those_products_to_cart() {
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).perform();
+        automationExercisePage.productsBlueProduct1.click();
+        automationExercisePage.continueShopping.click();
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).perform();
+        automationExercisePage.productsBlueProduct2.click();
+        automationExercisePage.continueShopping.click();
+        automationExercisePage.productsBlueProduct3.click();
+        automationExercisePage.continueShopping.click();
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).perform();
+        automationExercisePage.productsBlueProduct4.click();
+        automationExercisePage.continueShopping.click();
+        automationExercisePage.productsBlueProduct5.click();
+        automationExercisePage.continueShopping.click();
+        actions.sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN)
+                .sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).perform();
+        automationExercisePage.productsBlueProduct6.click();
+        automationExercisePage.continueShopping.click();
+        automationExercisePage.productsBlueProduct7.click();
+        automationExercisePage.continueShopping.click();
+
+    }
+    @Given("Click cart {string} button and verify that products are visible in cart")
+    public void click_cart_button_and_verify_that_products_are_visible_in_cart(String string) {
+        automationExercisePage.cartButton.click();
+        automationExercisePage.productsBlueProduct1Visible.isDisplayed();
+        automationExercisePage.productsBlueProduct2Visible.isDisplayed();
+        automationExercisePage.productsBlueProduct3Visible.isDisplayed();
+        automationExercisePage.productsBlueProduct4Visible.isDisplayed();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        automationExercisePage.productsBlueProduct5Visible.isDisplayed();
+        automationExercisePage.productsBlueProduct6Visible.isDisplayed();
+        automationExercisePage.productsBlueProduct7Visible.isDisplayed();
+
+    }
+    @Given("Click signup login {string} button and submit login details")
+    public void click_signup_login_button_and_submit_login_details(String string) {
+        actions.sendKeys(Keys.PAGE_UP).perform();
+        automationExercisePage.signupLoginButton.click();
+        automationExercisePage.newUserNameTextBox.sendKeys(ConfigReader.getProperty("AutomationExerciseUserName"));
+        automationExercisePage.newUserEmailTextBox.sendKeys(ConfigReader.getProperty("AutomationExerciseEmail"));
+    }
+    @Given("Again, go to Cart page")
+    public void again_go_to_cart_page() {
+        automationExercisePage.cartButton.click();
+
+    }
+    @Given("Verify that those products are visible in cart after login as well")
+    public void verify_that_those_products_are_visible_in_cart_after_login_as_well() {
+        automationExercisePage.productsBlueProduct1Visible.isDisplayed();
+        automationExercisePage.productsBlueProduct2Visible.isDisplayed();
+        automationExercisePage.productsBlueProduct3Visible.isDisplayed();
+        automationExercisePage.productsBlueProduct4Visible.isDisplayed();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        automationExercisePage.productsBlueProduct5Visible.isDisplayed();
+        automationExercisePage.productsBlueProduct6Visible.isDisplayed();
+        automationExercisePage.productsBlueProduct7Visible.isDisplayed();
+
+    }
+
+    @Given("Enter name, email and review")
+    public void enter_name_email_and_review() {
+        automationExercisePage.productsReviewName.sendKeys("ahmet");
+        actions.sendKeys(Keys.TAB).sendKeys("asdasd@gmail.com").sendKeys(Keys.TAB)
+                .sendKeys("HELLO MADAM").perform();
+
+    }
+
+    @Given("Click submit review {string} button")
+    public void click_submit_review_button(String string) {
+        automationExercisePage.productReviewSubmitButton.click();
+
+    }
+
+    @Then("Verify success message thank you for your review {string}")
+    public void verify_success_message_thank_you_for_your_review(String string) {
+        automationExercisePage.productReviewThankyouforReview.isDisplayed();
 
     }
 
