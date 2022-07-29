@@ -5,7 +5,8 @@ Feature: US1017 place order register before checkout
     And Verify that home page is visible successfully
     Then Click on signup Login 'Signup / Login' button
     Given Fill all details in Signup and create account
-    And Verify that delete 'ACCOUNT DELETED!' is visible and click 'Continue' button
+    Given Verify that 'ACCOUNT CREATED!' is visible
+    And Click continue 'Continue' button
     Given Verify that 'Logged in as username' is visible
     And Add products to cart
     Given Click cart 'Cart' button

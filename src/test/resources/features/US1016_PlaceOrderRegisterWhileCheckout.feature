@@ -8,7 +8,8 @@ Feature: US1016 place order register while checkout
     And Verify that cart page is displayed
     Given Click on signup Login cart page 'Signup / Login' button
     And Fill all details in Signup and create account
-    Then Verify that delete 'ACCOUNT DELETED!' is visible and click 'Continue' button
+    Given Verify that 'ACCOUNT CREATED!' is visible
+    And Click continue 'Continue' button
     Given Verify that 'Logged in as username' is visible
     And Click cart 'Cart' button
     Then Click proceed to checkout 'Proceed To Checkout' button

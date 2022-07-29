@@ -17,4 +17,4 @@ Feature: US1003 register user
     And Click continue 'Continue' button
     Then Verify that logged username 'Logged in as username' is visible
     Given Click delete 'Delete Account' button
-    Then Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+    Then Verify that delete 'ACCOUNT DELETED!' is visible and click 'Continue' button

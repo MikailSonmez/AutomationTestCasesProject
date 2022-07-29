@@ -6,10 +6,11 @@ Feature: US1026 download invoice after purchase order
     Then Add products to cart
     Given Click cart 'Cart' button
     And Verify that cart page is displayed
-    Then Click Proceed To Checkout
+    Then Click proceed to checkout 'Proceed To Checkout' button
     Given Click on signup Login 'Signup / Login' button
     Given Fill all details in Signup and create account
-    And Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
+    Given Verify that 'ACCOUNT CREATED!' is visible
+    And Click continue 'Continue' button
     Then Verify that 'Logged in as username' is visible
     Given Click cart 'Cart' button
     And Click proceed to checkout 'Proceed To Checkout' button

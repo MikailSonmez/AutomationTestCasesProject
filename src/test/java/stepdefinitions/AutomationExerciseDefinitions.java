@@ -14,6 +14,10 @@ import utilities.Driver;
 import utilities.JSutils;
 import utilities.ReusableMethods;
 
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
 import static utilities.Driver.driver;
 
 public class AutomationExerciseDefinitions {
@@ -352,7 +356,7 @@ public class AutomationExerciseDefinitions {
     }
     @Given("Click view cart add to cart 'View Cart' button")
     public void click_view_cart_add_to_cart_view_cart_button() {
-        automationExercisePage.thirdProductViewCart.click();
+        automationExercisePage.productViewCart.click();
 
     }
     @Then("Verify that product is displayed in cart page with exact quantity")
@@ -624,6 +628,98 @@ public class AutomationExerciseDefinitions {
     public void verify_success_message_thank_you_for_your_review(String string) {
         automationExercisePage.productReviewThankyouforReview.isDisplayed();
 
+    }
+
+    @Given("Scroll to bottom of page")
+    public void scroll_to_bottom_of_page() {
+        actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN)
+                .sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN)
+                .sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN)
+                .sendKeys(Keys.PAGE_DOWN).perform();
+
+    }
+    @Given("Verify recommended items {string} are visible")
+    public void verify_recommended_items_are_visible(String string) {
+        automationExercisePage.verifyRecommendedItemsVisible.isDisplayed();
+
+    }
+    @Then("Click on add to cart {string} on Recommended product")
+    public void click_on_add_to_cart_on_recommended_product(String string) {
+        automationExercisePage.addToCartRecommendedProduct.click();
+
+    }
+    @Given("Click on view cart {string} button")
+    public void click_on_view_cart_button(String string) {
+        automationExercisePage.productViewCart.click();
+
+    }
+    @Then("Verify that product is displayed in cart page")
+    public void verify_that_product_is_displayed_in_cart_page() {
+        automationExercisePage.verifyProductDisplayCartPage.isDisplayed();
+
+    }
+
+    @Then("Verify that the delivery address is same address filled at the time registration of account")
+    public void verify_that_the_delivery_address_is_same_address_filled_at_the_time_registration_of_account() {
+        String deliveryAddressText = automationExercisePage.cartPageYourDeliveryAddress.getText();
+        String billingAddressText = automationExercisePage.cartPageYourBillingAddress.getText();
+        Assert.assertEquals(deliveryAddressText,billingAddressText);
+    }
+
+    @Given("Verify that the billing address is same address filled at the time registration of account")
+    public void verify_that_the_billing_address_is_same_address_filled_at_the_time_registration_of_account() {
+        String deliveryAddressText = automationExercisePage.cartPageYourDeliveryAddress.getText();
+        String billingAddressText = automationExercisePage.cartPageYourBillingAddress.getText();
+        Assert.assertEquals(deliveryAddressText,billingAddressText);
+    }
+
+    @Given("Click download invoice {string} button and verify invoice is downloaded successfully.")
+    public void click_download_invoice_button_and_verify_invoice_is_downloaded_successfully(String string) {
+        automationExercisePage.orderPlacedDownloadInvoice.click();
+        File f = new File("C:\\Users\\mikai\\Downloads\\invoice.txt"); //filepath will be the directory path where you want to search a file
+        if(f.exists() && !f.isDirectory()) {
+            System.out.println("File exists");
+        }
+
+    }
+
+    @Then("Click continue invoice {string} button")
+    public void click_continue_invoice_button(String string) {
+        automationExercisePage.orderPlaceContinue.click();
+
+    }
+
+    @Then("Scroll down page to bottom")
+    public void scroll_down_page_to_bottom() {
+        actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN)
+                .sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN)
+                .sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN)
+                .sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN)
+                .sendKeys(Keys.PAGE_DOWN).perform();
+
+    }
+    @Given("Verify subscription {string} is visible")
+    public void verify_subscription_is_visible(String string) {
+        automationExercisePage.subscriptionText.isDisplayed();
+
+    }
+    @Given("Click on arrow at bottom right side to move upward")
+    public void click_on_arrow_at_bottom_right_side_to_move_upward() {
+        JSutils.clickElementByJS(automationExercisePage.homepageFullFledgedAutomationEngineersText);
+
+    }
+    @Then("Verify that page is scrolled up and {string} text is visible on screen")
+    public void verify_that_page_is_scrolled_up_and_text_is_visible_on_screen(String string) {
+        automationExercisePage.homepageFullFledgedAutomationEngineersText.isDisplayed();
+    }
+
+    @Given("Scroll up page to top")
+    public void scroll_up_page_to_top() {
+        actions.sendKeys(Keys.PAGE_UP).sendKeys(Keys.PAGE_UP).sendKeys(Keys.PAGE_UP)
+                .sendKeys(Keys.PAGE_UP).sendKeys(Keys.PAGE_UP).sendKeys(Keys.PAGE_UP)
+                .sendKeys(Keys.PAGE_UP).sendKeys(Keys.PAGE_UP)
+                .sendKeys(Keys.PAGE_UP).sendKeys(Keys.PAGE_UP)
+                .sendKeys(Keys.PAGE_UP).perform();
     }
 
 

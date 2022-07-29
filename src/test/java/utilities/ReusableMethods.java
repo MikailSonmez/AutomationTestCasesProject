@@ -149,8 +149,16 @@ public class ReusableMethods {
         return element;
     }
 
-    public static void scrollDown(WebDriver driver)
-    {
-        ((JavascriptExecutor)driver).executeScript("window.scroll(0, 10000);");
+    public static void scrollDown(WebDriver driver) {
+        ((JavascriptExecutor) driver).executeScript("window.scroll(0, 10000);");
+    }
+
+    public static void fileExists(String filepathString) {
+        File f = new File("filePathString"); //filepath will be the directory path where you want to search a file
+        if (f.exists() && !f.isDirectory()) {
+            System.out.println("File exists");
+        }
+
+
     }
 }

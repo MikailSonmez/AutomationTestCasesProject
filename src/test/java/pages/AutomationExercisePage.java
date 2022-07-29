@@ -214,7 +214,7 @@ public class AutomationExercisePage {
     public WebElement thirdProductAddToCart;
 
     @FindBy(xpath = "//*[@id=\"cartModal\"]/div/div/div[2]/p[2]/a/u")
-    public WebElement thirdProductViewCart;
+    public WebElement productViewCart;
 
     @FindBy(xpath = "//*[@id=\"product-3\"]/td[4]/button")
     public WebElement thirdProductQuantityVerify;
@@ -341,6 +341,24 @@ public class AutomationExercisePage {
 
     @FindBy(xpath = "//*[@id=\"review-section\"]/div/div/span")
     public WebElement productReviewThankyouforReview;
+
+    @FindBy(xpath = "/html/body/section[2]/div/div/div[2]/div[2]/h2")
+    public WebElement verifyRecommendedItemsVisible;
+
+    @FindBy(xpath = "//*[@id=\"recommended-item-carousel\"]/div/div[2]/div[1]/div/div/div/a")
+    public WebElement addToCartRecommendedProduct;
+
+    @FindBy(xpath = "//*[@id=\"product-4\"]")
+    public WebElement verifyProductDisplayCartPage;
+
+    @FindBy(xpath = "//*[@id=\"form\"]/div/div/div/a")
+    public WebElement orderPlacedDownloadInvoice;
+
+    @FindBy(xpath = "//*[@id=\"form\"]/div/div/div/div/a")
+    public WebElement orderPlaceContinue;
+
+    @FindBy(xpath = "//*[@id=\"slider-carousel\"]/div/div[2]/div[1]/h2")
+    public WebElement homepageFullFledgedAutomationEngineersText;
 
 
     // (css = "[onclick=\"addElement()\"]") with css like that

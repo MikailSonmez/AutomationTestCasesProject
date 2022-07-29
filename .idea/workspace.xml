@@ -9,7 +9,12 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/AutomationExercisePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AutomationExercisePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/stepdefinitions/AutomationExerciseDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepdefinitions/AutomationExerciseDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1023_AddReviewProduct.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1023_AddReviewProduct.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/ReusableMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1003_RegisterUser.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1003_RegisterUser.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1016_PlaceOrderRegisterWhileCheckout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1016_PlaceOrderRegisterWhileCheckout.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1017_PlaceOrderRegisterBeforeCheckout.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1017_PlaceOrderRegisterBeforeCheckout.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1025_VerifyAddressDetailsCheckoutPage.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1025_VerifyAddressDetailsCheckoutPage.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/US1026_DownloadInvoiceAfterPurchaseOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/US1026_DownloadInvoiceAfterPurchaseOrder.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,15 +47,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Cucumber Java.Feature: US1023_AddReviewProduct">
-    <configuration name="Feature: US1020_ViewCategoryProducts" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Runner">
+    <configuration name="Feature: US1025_VerifyAddressDetailsCheckoutPage" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1020_ViewCategoryProducts.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1025_VerifyAddressDetailsCheckoutPage.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationTestCasesProject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US1020_ViewCategoryProducts" />
+      <option name="SUGGESTED_NAME" value="Feature: US1025_VerifyAddressDetailsCheckoutPage" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -62,14 +67,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: US1021_ViewCartBrandProducts" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US1026_DownloadInvoiceAfterPurchaseOrder" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1021_ViewCartBrandProducts.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1026_DownloadInvoiceAfterPurchaseOrder.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationTestCasesProject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US1021_ViewCartBrandProducts" />
+      <option name="SUGGESTED_NAME" value="Feature: US1026_DownloadInvoiceAfterPurchaseOrder" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -81,14 +86,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: US1022_SearchProductsVerifyCartAfterLogin" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US1027_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1022_SearchProductsVerifyCartAfterLogin.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1027_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationTestCasesProject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US1022_SearchProductsVerifyCartAfterLogin" />
+      <option name="SUGGESTED_NAME" value="Feature: US1027_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -100,14 +105,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Feature: US1023_AddReviewProduct" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: US1028_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1023_AddReviewProduct.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1028_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="AutomationTestCasesProject" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US1023_AddReviewProduct" />
+      <option name="SUGGESTED_NAME" value="Feature: US1028_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -136,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Feature: US1023_AddReviewProduct" />
         <item itemvalue="JUnit.Runner" />
-        <item itemvalue="Cucumber Java.Feature: US1022_SearchProductsVerifyCartAfterLogin" />
-        <item itemvalue="Cucumber Java.Feature: US1021_ViewCartBrandProducts" />
-        <item itemvalue="Cucumber Java.Feature: US1020_ViewCategoryProducts" />
+        <item itemvalue="Cucumber Java.Feature: US1028_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality" />
+        <item itemvalue="Cucumber Java.Feature: US1027_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality" />
+        <item itemvalue="Cucumber Java.Feature: US1026_DownloadInvoiceAfterPurchaseOrder" />
+        <item itemvalue="Cucumber Java.Feature: US1025_VerifyAddressDetailsCheckoutPage" />
       </list>
     </recent_temporary>
   </component>
