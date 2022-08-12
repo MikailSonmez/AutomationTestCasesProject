@@ -697,6 +697,7 @@ public class AutomationExerciseDefinitions {
                 .sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN)
                 .sendKeys(Keys.PAGE_DOWN).perform();
 
+
     }
     @Given("Verify subscription {string} is visible")
     public void verify_subscription_is_visible(String string) {
